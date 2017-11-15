@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=Run multiple Exodus/Eden binaries
+Encoding=UTF-8
+Exec=/usr/bin/multiexo
+GenericName=MultiExo
+Icon=/usr/share/pixmaps/multiexo.png
+Name=Multiple Exoduses
+Categories=Application;Qt5;Web;
+StartupNotify=true
+Terminal=false
+Type=Application
+X-DCOP-ServiceType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

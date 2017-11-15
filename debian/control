@@ -1,0 +1,19 @@
+Source: exopanel
+Priority: extra
+Maintainer: R. Douglas Barbieri <doug@dooglio.net>
+Build-Depends: cmake, debhelper, qtbase5-dev, snapcmakemodules (>= 1.0.35.3~xenial)
+Standards-Version: 3.9.4
+Section: admin
+
+Package: exopanel
+Section: admin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A panel of tools for Exodus CSEs
+ This provides a panel of nifty stuff which makes the CSE's life a lot easier. Automating tedious tasks like composing xpub
+ Javascript commands for the developer console, opening up ShapeShift order pages and JSON output, etc.
+ The panel floats above your desktop, and can be placed anywhere so you can be as productive as possible.
+ .
+ This is a binary package.
+
+# vim: ts=4 sw=4 et

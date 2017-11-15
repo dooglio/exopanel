@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="exodus">images/exodus.png</file>
+        <file alias="shape-shift">images/shape_shift_icon.png</file>
+        <file alias="btc">images/Bitcoin.png</file>
+        <file alias="bch">images/bitcoin_cash.png</file>
+        <file alias="dash">images/dash.png</file>
+        <file alias="dcr">images/decred.png</file>
+        <file alias="ltc">images/ltc-64px.png</file>
+    </qresource>
+</RCC>
