@@ -4,7 +4,6 @@ const {ipcRenderer} = require('electron');
 
 function changeContents( id, contents ) {
     var idx = 0;
-    //$("#" + id).text( contents.long );
     $("#" + id).html( contents.long + " <small>(" + contents.short + ")</small>" )
     $("#" + id + "-price").text( contents.price );
     $("#" + id + "-change").text( contents.perc );

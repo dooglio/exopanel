@@ -30,19 +30,6 @@ app.once('ready', () => {
   // Show window when page is ready
   window.once('ready-to-show', () => {
     console.log('showing window');
-    /*
-    const url = "https://api.coinmarketcap.com/v1/ticker/?limit=3";
-    var request = require("request");
-    request({
-        url: url,
-        json: true
-      }, function( error, response, body ) {
-      if( !error && response.statusCode === 200 ) {
-          console.log(body);
-        }
-      }
-    )
-    */
     window.show()
   })
 })
