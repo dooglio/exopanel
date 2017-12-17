@@ -1,25 +1,7 @@
-# Prices
+# exopanel
+A panel of tools for Exodus CSEs
 
-Simple [Electron](http://electron.atom.io) application that shows the current
-price of oil, gold, and silver using the Yahoo Finance API.
+This provides a panel of nifty stuff which makes the CSE's life a lot easier. Automating tedious tasks like composing xpub
+Javascript commands for the developer console, opening up ShapeShift order pages and JSON output, etc.
 
-![screenshot](https://cloud.githubusercontent.com/assets/671378/21198004/6e7a3798-c1f2-11e6-8228-495de90b7797.png)
-
-## Getting started
-
-- Install [Node LTS](https://nodejs.org)
-- Clone this repository
-- `cd price`
-- `npm install` to install the application's dependencies
-- `npm start` to start the application
-
-## Going further
-
-Here are some ideas on how it can be improved using other Electron APIs.
-
-- Double-click commodity to open directly on http://finance.yahoo.com
-- Refresh automatically on an interval.
-- Add the price of platinum (`PL=F`) to the app.
-- Export prices to a `.csv` file.
-- Show percentage change in price.
-- Show notifications when prices go above/below certain amounts.
+The panel floats above your desktop, and can be placed anywhere so you can be as productive as possible.
