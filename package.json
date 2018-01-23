@@ -1,0 +1,14 @@
+{
+  "name": "ExoPanel",
+  "version": "1.0.0",
+  "description": "Quick Panel for Exodus CSEs",
+  "repository": "dooglio/exopanel",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron app.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.12"
+  }
+}
