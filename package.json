@@ -4,6 +4,9 @@
   "description": "Quick Panel for Exodus CSEs",
   "repository": "dooglio/exopanel",
   "main": "app.js",
+  "engines": {
+    "electron": "1.7.11"
+  },
   "scripts": {
     "start": "electron app.js"
   },

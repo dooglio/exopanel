@@ -30,17 +30,7 @@ private:
 
 private slots:
     void onAboutToQuit();
-    void onCurrentSelectionChanged(const QModelIndex & , const QModelIndex & );
-    void onWalletSelected(const QItemSelection & /*selected*/, const QItemSelection & /*deselected*/);
-
-    void on_action_NewWallet_triggered();
-    void on_action_RunWallet_triggered();
-    void on_action_EditWallet_triggered();
-    void on_action_DeleteWallet_triggered();
-    void on_action_Settings_triggered();
     void on_action_Exit_triggered();
-    void on_tabWidget_tabCloseRequested(int index);
-    //void on_action_SSOrderId_triggered();
     void on_sendButton_clicked();
     void on_txSendButton_clicked();
     void on_jsonButton_clicked();

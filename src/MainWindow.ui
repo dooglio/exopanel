@@ -6,322 +6,221 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>943</width>
-    <height>621</height>
+    <width>1073</width>
+    <height>177</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MultiExo -- Support Application to Run Multiple Wallets</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
+   <iconset>
     <normaloff>:/icons/run</normaloff>:/icons/run</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QTreeView" name="queryTableView">
-      <property name="selectionMode">
-       <enum>QAbstractItemView::ExtendedSelection</enum>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1,0,0,0">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>ShapeShift Order ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="orderIdEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="sendButton">
+        <property name="text">
+         <string>Open In &amp;Browser</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="jsonButton">
+        <property name="text">
+         <string>Open &amp;JSON</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cmdButton">
+        <property name="text">
+         <string>Copy &amp;Cmd</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>SS Receive Address:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="receiveAddrEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="txSendButton">
+        <property name="text">
+         <string>&amp;Open in Browser</string>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Ethereum Address:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ethEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ethButton">
+        <property name="text">
+         <string>Copy E&amp;th Cmd</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>XPub Address:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="xpubEdit"/>
+      </item>
+      <item>
+       <widget class="QComboBox" name="coinTypeCB">
+        <item>
+         <property name="text">
+          <string>bitcoin</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/btc</normaloff>:/icons/btc</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>bcash</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/bch</normaloff>:/icons/bch</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>dash</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/dash</normaloff>:/icons/dash</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>decred</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/dcr</normaloff>:/icons/dcr</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>litecoin</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/ltc</normaloff>:/icons/ltc</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="xpubButton">
+        <property name="text">
+         <string>Copy &amp;XPub Cmd</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>&amp;Blockchain.info</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Clear &amp;All</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
-  <widget class="QToolBar" name="toolBar">
-   <property name="windowTitle">
-    <string>toolBar</string>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>64</width>
-     <height>64</height>
-    </size>
-   </property>
-   <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonTextUnderIcon</enum>
-   </property>
-   <attribute name="toolBarArea">
-    <enum>LeftToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-   <addaction name="action_NewWallet"/>
-   <addaction name="action_RunWallet"/>
-   <addaction name="action_EditWallet"/>
-   <addaction name="action_DeleteWallet"/>
-   <addaction name="separator"/>
-   <addaction name="action_Settings"/>
-   <addaction name="separator"/>
-   <addaction name="action_Exit"/>
-  </widget>
-  <widget class="QDockWidget" name="lowerDockWidget">
-   <property name="features">
-    <set>QDockWidget::DockWidgetMovable</set>
-   </property>
-   <property name="allowedAreas">
-    <set>Qt::BottomDockWidgetArea|Qt::TopDockWidgetArea</set>
-   </property>
-   <attribute name="dockWidgetArea">
-    <number>8</number>
-   </attribute>
-   <widget class="QWidget" name="lowerDockWidgetContents">
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QTabWidget" name="tabWidget">
-       <property name="tabsClosable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>943</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menu_File">
-    <property name="title">
-     <string>&amp;File</string>
-    </property>
-    <addaction name="action_Settings"/>
-    <addaction name="separator"/>
-    <addaction name="action_Exit"/>
-   </widget>
-   <widget class="QMenu" name="menu_Edit">
-    <property name="title">
-     <string>&amp;Edit</string>
-    </property>
-    <addaction name="action_NewWallet"/>
-    <addaction name="action_RunWallet"/>
-    <addaction name="action_EditWallet"/>
-    <addaction name="action_DeleteWallet"/>
-   </widget>
-   <widget class="QMenu" name="menu_Tools">
-    <property name="title">
-     <string>&amp;View</string>
-    </property>
-    <addaction name="action_SSOrderId"/>
-   </widget>
-   <addaction name="menu_File"/>
-   <addaction name="menu_Edit"/>
-   <addaction name="menu_Tools"/>
-  </widget>
-  <widget class="QDockWidget" name="upperDockWidget">
-   <attribute name="dockWidgetArea">
-    <number>4</number>
-   </attribute>
-   <widget class="QWidget" name="dockWidgetContents">
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1,0,0,0">
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>ShapeShift Order ID:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="orderIdEdit"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="sendButton">
-         <property name="text">
-          <string>Open In &amp;Browser</string>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="jsonButton">
-         <property name="text">
-          <string>Open &amp;JSON</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="cmdButton">
-         <property name="text">
-          <string>Copy &amp;Cmd</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0">
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>SS Receive Address:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="receiveAddrEdit"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="txSendButton">
-         <property name="text">
-          <string>&amp;Open in Browser</string>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>XPub Address:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="xpubEdit"/>
-       </item>
-       <item>
-        <widget class="QComboBox" name="coinTypeCB">
-         <item>
-          <property name="text">
-           <string>bitcoin</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources.qrc">
-            <normaloff>:/icons/btc</normaloff>:/icons/btc</iconset>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>bcash</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources.qrc">
-            <normaloff>:/icons/bch</normaloff>:/icons/bch</iconset>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>dash</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources.qrc">
-            <normaloff>:/icons/dash</normaloff>:/icons/dash</iconset>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>decred</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources.qrc">
-            <normaloff>:/icons/dcr</normaloff>:/icons/dcr</iconset>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>litecoin</string>
-          </property>
-          <property name="icon">
-           <iconset resource="resources.qrc">
-            <normaloff>:/icons/ltc</normaloff>:/icons/ltc</iconset>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="xpubButton">
-         <property name="text">
-          <string>Copy &amp;XPub Cmd</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Ethereum Address:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ethEdit"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="ethButton">
-         <property name="text">
-          <string>Copy E&amp;th Cmd</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>Clear &amp;All</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-  </widget>
   <action name="action_NewWallet">
    <property name="icon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/wallet</normaloff>:/icons/wallet</iconset>
    </property>
    <property name="text">
@@ -339,7 +238,7 @@
     <bool>false</bool>
    </property>
    <property name="icon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/run</normaloff>:/icons/run</iconset>
    </property>
    <property name="text">
@@ -354,7 +253,7 @@
     <bool>false</bool>
    </property>
    <property name="icon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
    </property>
    <property name="text">
@@ -369,7 +268,7 @@
     <bool>false</bool>
    </property>
    <property name="icon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/delete</normaloff>:/icons/delete</iconset>
    </property>
    <property name="text">
@@ -381,7 +280,7 @@
   </action>
   <action name="action_Settings">
    <property name="icon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/settings</normaloff>:/icons/settings</iconset>
    </property>
    <property name="text">
@@ -390,7 +289,7 @@
   </action>
   <action name="action_Exit">
    <property name="icon">
-    <iconset resource="resources.qrc">
+    <iconset>
      <normaloff>:/icons/exit</normaloff>:/icons/exit</iconset>
    </property>
    <property name="text">
@@ -454,45 +353,11 @@
   <tabstop>xpubButton</tabstop>
   <tabstop>ethEdit</tabstop>
   <tabstop>ethButton</tabstop>
-  <tabstop>queryTableView</tabstop>
-  <tabstop>tabWidget</tabstop>
  </tabstops>
  <resources>
   <include location="resources.qrc"/>
  </resources>
  <connections>
-  <connection>
-   <sender>queryTableView</sender>
-   <signal>doubleClicked(QModelIndex)</signal>
-   <receiver>action_EditWallet</receiver>
-   <slot>trigger()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>473</x>
-     <y>310</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>action_SSOrderId</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upperDockWidget</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>473</x>
-     <y>53</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>orderIdEdit</sender>
    <signal>returnPressed()</signal>
@@ -526,22 +391,6 @@
    </hints>
   </connection>
   <connection>
-   <sender>xpubEdit</sender>
-   <signal>returnPressed()</signal>
-   <receiver>xpubButton</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>484</x>
-     <y>129</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>762</x>
-     <y>129</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>ethEdit</sender>
    <signal>returnPressed()</signal>
    <receiver>ethButton</receiver>
@@ -554,6 +403,22 @@
     <hint type="destinationlabel">
      <x>769</x>
      <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>xpubEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>xpubButton</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>484</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>762</x>
+     <y>129</y>
     </hint>
    </hints>
   </connection>

@@ -3,7 +3,6 @@
 #include "MainWindow.h"
 
 #include <QtCore>
-#include <QtSql>
 #include <QtWidgets>
 
 
@@ -15,11 +14,6 @@ int main( int argc, char *argv[] )
     app.setOrganizationDomain ( "exodus.io"            );
     app.setOrganizationName   ( "exodus"               );
     app.setWindowIcon         ( QIcon(":icons/exodus") );
-
-    if( !MainWindow::setupDatabase() )
-    {
-        return 1;
-    }
 
     MainWindow win;
     win.show();
